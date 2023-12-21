@@ -31,7 +31,7 @@ public class GatewayConfig {
                                 .filters(f->f
                                         .stripPrefix(1)
                                         .removeRequestHeader("Origin")
-                                        .addRequestHeader("Origin","http://localhost:8080")
+                                        .addRequestHeader("Origin","http://gateway-service:8080")
                                         .dedupeResponseHeader(
                                                 "Access-Control-Allow-Origin",
                                                 "RETAIN_FIRST"
@@ -49,7 +49,7 @@ public class GatewayConfig {
                         .filters(f->f
                                 .stripPrefix(1)
                                 .removeRequestHeader("Origin")
-                                .addRequestHeader("Origin","http://localhost:8080")
+                                .addRequestHeader("Origin","http://gateway-service:8080")
                                 .dedupeResponseHeader(
                                         "Access-Control-Allow-Origin",
                                         "RETAIN_FIRST"
@@ -69,7 +69,7 @@ public class GatewayConfig {
                         .filters(f->f
                                 .stripPrefix(1)
                                 .removeRequestHeader("Origin")
-                                .addRequestHeader("Origin","http://localhost:8080")
+                                .addRequestHeader("Origin","http://gateway-service:8080")
                                 .dedupeResponseHeader(
                                         "Access-Control-Allow-Origin",
                                         "RETAIN_FIRST"
@@ -89,7 +89,7 @@ public class GatewayConfig {
                         .filters(f->f
                                 .stripPrefix(1)
                                 .removeRequestHeader("Origin")
-                                .addRequestHeader("Origin","http://localhost:8080")
+                                .addRequestHeader("Origin","http://gateway-service:8080")
                                 .dedupeResponseHeader(
                                         "Access-Control-Allow-Origin",
                                         "RETAIN_FIRST"
